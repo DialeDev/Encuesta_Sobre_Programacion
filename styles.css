@@ -1,0 +1,171 @@
+body {
+    background: linear-gradient(220.55deg,#0400fa 0%, #100f65 100%);
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    color: #0400fa;
+}
+
+input,
+select,
+textarea {
+    font-size: 1.2rem;
+}
+
+
+p[id="description"] {
+    text-align: center;
+    margin: 0.5em 0 0 0;
+}
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    display: block;
+    margin: 3px 0 10px 0;
+    width: 53.1%;
+    height: 1.8em;
+    color: #100f65;
+    border: 1px solid #0400fa;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+select[id="dropdown"],
+select[id="dropdown2"] {
+    margin: 3px 0 10px 0;
+    width: 53.1%;
+    height: 1.8em;
+    color: #100f65;
+    border-color: #0400fa;
+    padding: 0 5px;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+}
+
+.labelOpSelect {
+    vertical-align: middle;
+    margin: 0.18rem;
+}
+
+.boSelect {
+    vertical-align: middle;
+    margin: 0.18rem;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+.pregunta {
+    margin: 0 0 10px 0;
+}
+
+.pregunta2 {
+    margin: 10px 0 0 0;
+}
+
+.aclaracion {
+    margin: 0 0 10px 0;
+}
+
+.pregunta:last-of-type {
+    margin: 0;
+    text-align: left;
+}
+
+textarea {
+    height: 4.1em;
+    padding: 0.75em;
+    width: 100%;
+    color: #100f65;
+    background-color: #ffffff00;
+    margin: 10px 0;
+    outline: none;
+    resize: none;
+    border-color: #0400fa;
+    font-family: Helvetica;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    background-color: #fff;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 50px auto 15px auto;
+    padding: 1.5em;
+    color: #100f65;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.datosDelUsuario {
+    background-color: #fff;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1.5em;
+    color: #0400fa;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.preferenciasUsuario {
+    background-color: #fff;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 15px auto;
+    padding: 1.5em;
+    color: #0400fa;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.opinionUsuario {
+    background-color: #fff;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 15px auto 50px auto;
+    padding: 1.5em;
+    color: #0400fa;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.opinionUsuario input {
+    width: 100%;
+    background: linear-gradient(#0400fa, #100f65);
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: #fff;
+    margin: auto;
+}
+
+.opinionUsuario input:hover {
+    background: linear-gradient(#0400ff,#4e4bff);
+}
+
+.opinionUsuario input:active {
+    background-color: #0400fa;
+}
+

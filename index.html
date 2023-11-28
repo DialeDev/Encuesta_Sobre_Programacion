@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta</title>
+</head>
+
+<body>
+    <div class="encabezado">
+        <h1 id="title">Encuesta sobre programación</h1>
+        <p id="description">Nos encantaría conocer algunas de tus preferencias como programador</p>
+    </div>
+    <main>
+        <form id="survey-form" autocomplete="off" method="get">
+            <div class="datosDelUsuario">
+                <fieldset class="datosGenerales">
+                    <label for="name" id="name-label">Nombre</label>
+                    <input id="name" type="text" required placeholder="Ingrese su nombre">
+                    <label for="email" id="email-label">Correo Electrónico</label>
+                    <input id="email" type="email" required placeholder="Ingrese su correo electrónico">
+                    <label for="number" id="number-label">Edad</label>
+                    <input id="number" type="number" min="10" max="100" placeholder="Ingrese su edad" required>
+                    <label for="dropdown">¿Cuál de estás opciones describe mejor su estado actual?</label>
+                    <select name="estadoActual" id="dropdown" required>
+                        <option disabled selected>Seleccione alguna opción</option>
+                        <option value="programador">Estoy trabajando de programador</option>
+                        <option value="estudiante">Estoy aprendiendo a programar</option>
+                        <option value="otro">Otros</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="preferenciasUsuario">
+                <fieldset class="contenedor2">
+                    <label for="dropdown2">¿En qué área de la programación estás especializado?</label>
+                    <select name="areaProgramacion" id="dropdown2" required>
+                        <option disabled selected>Seleccione alguna opción</option>
+                        <option value="dweb">Desarrollo Web</option>
+                        <option value="dsoftware">Desarrollo de Software</option>
+                        <option value="ia">Inteligencia Artificial</option>
+                        <option value="otro">Otros</option>
+                    </select>
+                    <p class="pregunta">¿Cuál es el lenguaje de programación que más utilizas?</p>
+                    <input type="radio" name="lengMasUsado" id="py" value="python" class="boSelect">
+                    <label class="labelOpSelect" for="py">Python</label>
+                    <br>
+                    <input type="radio" name="lengMasUsado" id="jv" value="java" class="boSelect">
+                    <label class="labelOpSelect" for="jv">Java</label>
+                    <br>
+                    <input type="radio" name="lengMasUsado" id="c#" value="c#" class="boSelect">
+                    <label class="labelOpSelect" for="c#">C#</label>
+                    <br>
+                    <input type="radio" name="lengMasUsado" id="js" value="javascript" class="boSelect">
+                    <label class="labelOpSelect" for="js">JavaScript</label>
+                    <br>
+                    <input type="radio" name="lengMasUsado" id="html-css" value="html-css" class="boSelect">
+                    <label class="labelOpSelect" for="html-css">HTML / CSS</label>
+                    <p class="pregunta2">¿Cuál de estás herramientas utilizas para estudiar programación?</p>
+                    <p class="aclaracion">(Puedes selecionar varias opciones)</p>
+                    <input type="checkbox" id="videoYt" value="videoyt" class="boSelect">
+                    <label for="videoYt" class="labelOpSelect">Vídeos de YouTube</label>
+                    <br>
+                    <input type="checkbox" id="CursosNet" value="cursosNet" class="boSelect">
+                    <label for="CursosNet" class="labelOpSelect">Cursos en Internet</label>
+                    <br>
+                    <input type="checkbox" id="libros" value="libros" class="boSelect">
+                    <label for="libros" class="labelOpSelect">Libros</label>
+                </fieldset>
+            </div>
+            <div class="opinionUsuario">
+                <fieldset>
+                    <p class="pregunta">Cuentanos cómo ha sido tu experiencia aprendiendo a programar</p>
+                    <textarea id="comentario" placeholder="Cuentanos lo que sea..." required></textarea>
+                    <input type="submit" id="submit">
+                </fieldset>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
